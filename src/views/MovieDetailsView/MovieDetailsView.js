@@ -33,7 +33,6 @@ export default function MovieDetailsView() {
 
   const match = useMatch('/movies/:slug/*');
 
-  const url = match.pathname;
   const urlBase = match.pathnameBase;
 
   // console.log(useNavigate);
