@@ -1,0 +1,17 @@
+.trailersContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 1500px;
+  padding: 0;
+  margin: 0;
+  margin: 0 auto;
+  @media screen and (max-width: 768px) {
+    width: 700px;
+  }
+}
+
+.trailerItem {
+  margin: 0;
+}
