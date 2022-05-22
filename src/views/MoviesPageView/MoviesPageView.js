@@ -17,7 +17,6 @@ export default function MoviesView() {
 
   const searchQuery = new URLSearchParams(location.search).get('query'); //parse value of query param with location.search
 
-  console.log(searchQuery);
   useEffect(() => {
     if (searchQuery) {
       getFilmsBySearchQuery(searchQuery).then(setMovie);
@@ -25,6 +24,7 @@ export default function MoviesView() {
     navigate({
       search: `?query=${query}`,
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchQuery]);
 
   const onChange = evt => {
@@ -34,11 +34,7 @@ export default function MoviesView() {
   const onSubmit = evt => {
     evt.preventDefault();
 
-    async function getMovieByQuery() {
-      evt.preventDefault();
-      const getMovie = await getFilmsBySearchQuery(query);
-      setMovie(getMovie);
-    }
+    getFilmsBySearchQuery(query).then(setMovie);
 
     navigate({
       pathname: navigate.location,

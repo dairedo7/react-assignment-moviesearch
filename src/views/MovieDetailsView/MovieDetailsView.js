@@ -4,14 +4,12 @@ import {
   Route,
   Routes,
   useMatch,
-  useRouteMatch,
 } from 'react-router-dom';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useState, useEffect, Suspense } from 'react';
 
 import { getFilmById } from '../../components/Services/API';
-import { getTrailerData } from '../../components/Services/API';
 
 import GoBackBtn from 'components/Component/GoBackBtn/GoBackBtn';
 import MovieCard from 'components/Component/MovieCard/MovieCard';
@@ -30,24 +28,20 @@ export default function MovieDetailsView() {
   const { slug } = useParams();
 
   const movieId = slug.match(/[a-z0-9]+$/)[0];
-  console.log(movieId);
 
   const location = useLocation();
-  console.log(location);
+
   const match = useMatch('/movies/:slug/*');
-  console.log(match);
+
   const url = match.pathname;
   const urlBase = match.pathnameBase;
 
-  console.log(url);
   // console.log(useNavigate);
 
   useEffect(() => {
     getFilmById(movieId).then(setMovieDetails);
     // console.log(movieDetails);
-    console.log(movieId);
   }, [movieId]);
-  console.log(movieDetails);
 
   if (!movieDetails) {
     return <></>; //we need to return at least an empty fragment

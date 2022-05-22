@@ -9,16 +9,9 @@ import unavailableImage from '../../../images/unavailableIMG.png';
 export default function Cast({ movieId }) {
   const [cast, setCast] = useState([]);
 
-  console.log('called out!');
-
-  // const location = useLocation();
-  // const { castState } = location.state;
-  // console.log(castState);
-
   useEffect(() => {
     getCastData(movieId).then(setCast);
   }, [movieId]);
-  console.log(cast);
 
   return (
     <ul className={styles.crewList}>

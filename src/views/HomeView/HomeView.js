@@ -10,7 +10,6 @@ export default function HomeView() {
   useEffect(() => {
     async function getFilms() {
       const getTrending = await getTrendingFilms();
-      console.log(getTrending);
       setMovies(getTrending);
     }
     getFilms();

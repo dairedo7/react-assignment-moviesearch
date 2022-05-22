@@ -1,7 +1,7 @@
 import styles from './MovieCard.module.css';
 
 import defaultImage from '../../../images/unavailableIMG.png';
-console.log(defaultImage);
+
 export default function MovieCard({ movieDetails }) {
   const {
     backdrop_path,

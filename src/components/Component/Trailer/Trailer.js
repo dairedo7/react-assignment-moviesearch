@@ -34,3 +34,7 @@ export default function Trailer({ teaser }) {
     </>
   );
 }
+
+Trailer.propTypes = {
+  teaser: PropTypes.string.isRequired,
+};
