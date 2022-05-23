@@ -1,13 +1,40 @@
 {
   "files": {
-    "main.css": "/react-assignment-moviesearch/static/css/main.73859176.css",
-    "main.js": "/react-assignment-moviesearch/static/js/main.ec33b435.js",
+    "main.css": "/react-assignment-moviesearch/static/css/main.97f0359f.css",
+    "main.js": "/react-assignment-moviesearch/static/js/main.41d5669b.js",
+    "HomeView.css": "/react-assignment-moviesearch/static/css/HomeView.31d6cfe0.chunk.css",
+    "HomeView.js": "/react-assignment-moviesearch/static/js/HomeView.30be5b00.chunk.js",
+    "MoviesView.css": "/react-assignment-moviesearch/static/css/MoviesView.ca3bf860.chunk.css",
+    "MoviesView.js": "/react-assignment-moviesearch/static/js/MoviesView.83cd6ec0.chunk.js",
+    "MovieDetailsView.css": "/react-assignment-moviesearch/static/css/MovieDetailsView.754f28f1.chunk.css",
+    "MovieDetailsView.js": "/react-assignment-moviesearch/static/js/MovieDetailsView.02a7182b.chunk.js",
+    "NotFound.js": "/react-assignment-moviesearch/static/js/NotFound.4e135f81.chunk.js",
+    "MoviesList.js": "/react-assignment-moviesearch/static/js/MoviesList.2219e574.chunk.js",
+    "Cast.css": "/react-assignment-moviesearch/static/css/Cast.baa0dbf6.chunk.css",
+    "Cast.js": "/react-assignment-moviesearch/static/js/Cast.b5ce6af4.chunk.js",
+    "Reviews.js": "/react-assignment-moviesearch/static/js/Reviews.4b4e4c43.chunk.js",
+    "Trailer.css": "/react-assignment-moviesearch/static/css/Trailer.a56ea0c5.chunk.css",
+    "Trailer.js": "/react-assignment-moviesearch/static/js/Trailer.f2305994.chunk.js",
+    "static/js/459.abac6370.chunk.js": "/react-assignment-moviesearch/static/js/459.abac6370.chunk.js",
     "index.html": "/react-assignment-moviesearch/index.html",
-    "main.73859176.css.map": "/react-assignment-moviesearch/static/css/main.73859176.css.map",
-    "main.ec33b435.js.map": "/react-assignment-moviesearch/static/js/main.ec33b435.js.map"
+    "main.97f0359f.css.map": "/react-assignment-moviesearch/static/css/main.97f0359f.css.map",
+    "main.41d5669b.js.map": "/react-assignment-moviesearch/static/js/main.41d5669b.js.map",
+    "HomeView.30be5b00.chunk.js.map": "/react-assignment-moviesearch/static/js/HomeView.30be5b00.chunk.js.map",
+    "MoviesView.ca3bf860.chunk.css.map": "/react-assignment-moviesearch/static/css/MoviesView.ca3bf860.chunk.css.map",
+    "MoviesView.83cd6ec0.chunk.js.map": "/react-assignment-moviesearch/static/js/MoviesView.83cd6ec0.chunk.js.map",
+    "MovieDetailsView.754f28f1.chunk.css.map": "/react-assignment-moviesearch/static/css/MovieDetailsView.754f28f1.chunk.css.map",
+    "MovieDetailsView.02a7182b.chunk.js.map": "/react-assignment-moviesearch/static/js/MovieDetailsView.02a7182b.chunk.js.map",
+    "NotFound.4e135f81.chunk.js.map": "/react-assignment-moviesearch/static/js/NotFound.4e135f81.chunk.js.map",
+    "MoviesList.2219e574.chunk.js.map": "/react-assignment-moviesearch/static/js/MoviesList.2219e574.chunk.js.map",
+    "Cast.baa0dbf6.chunk.css.map": "/react-assignment-moviesearch/static/css/Cast.baa0dbf6.chunk.css.map",
+    "Cast.b5ce6af4.chunk.js.map": "/react-assignment-moviesearch/static/js/Cast.b5ce6af4.chunk.js.map",
+    "Reviews.4b4e4c43.chunk.js.map": "/react-assignment-moviesearch/static/js/Reviews.4b4e4c43.chunk.js.map",
+    "Trailer.a56ea0c5.chunk.css.map": "/react-assignment-moviesearch/static/css/Trailer.a56ea0c5.chunk.css.map",
+    "Trailer.f2305994.chunk.js.map": "/react-assignment-moviesearch/static/js/Trailer.f2305994.chunk.js.map",
+    "459.abac6370.chunk.js.map": "/react-assignment-moviesearch/static/js/459.abac6370.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.73859176.css",
-    "static/js/main.ec33b435.js"
+    "static/css/main.97f0359f.css",
+    "static/js/main.41d5669b.js"
   ]
 }
