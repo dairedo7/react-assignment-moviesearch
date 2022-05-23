@@ -1,11 +1,25 @@
-import MoviesView from 'views/MoviesPageView/MoviesPageView';
 import { Routes, Route } from 'react-router-dom';
-import { Suspense } from 'react';
+import { lazy, Suspense } from 'react';
 import Navigation from 'components/Navigation/Navigation';
-import NotFound from './views/NotFoundView/NotFoundView';
-import HomeView from 'views/HomeView/HomeView';
+
 import './index.css';
-import MovieDetailsView from 'views/MovieDetailsView/MovieDetailsView';
+
+const HomeView = lazy(() =>
+  import('./views/HomeView/HomeView' /* webpackChunkName: "HomeView" */)
+);
+const MoviesView = lazy(() =>
+  import(
+    './views/MoviesPageView/MoviesPageView' /* webpackChunkName: "MoviesView" */
+  )
+);
+const MovieDetailsView = lazy(() =>
+  import(
+    './views/MovieDetailsView/MovieDetailsView' /* webpackChunkName: "MovieDetailsView" */
+  )
+);
+const NotFound = lazy(() =>
+  import('./views/NotFoundView/NotFoundView' /* webpackChunkName: "NotFound" */)
+);
 
 export function App() {
   return (

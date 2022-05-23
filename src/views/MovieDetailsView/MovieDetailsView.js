@@ -7,18 +7,29 @@ import {
 } from 'react-router-dom';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { useState, useEffect, Suspense } from 'react';
+import { useState, useEffect, lazy, Suspense } from 'react';
 
 import { getFilmById } from '../../components/Services/API';
 
 import GoBackBtn from 'components/Component/GoBackBtn/GoBackBtn';
 import MovieCard from 'components/Component/MovieCard/MovieCard';
 import NotFoundView from 'views/NotFoundView/NotFoundView';
-import Cast from 'components/Component/Cast/Cast';
-import Reviews from 'components/Component/Reviews/Reviews';
-import Trailer from 'components/Component/Trailer/Trailer';
 
 import styles from './MovieDetailsView.module.scss';
+const Cast = lazy(() =>
+  import('components/Component/Cast/Cast' /* webpackChunkName: "Cast" */)
+);
+
+const Reviews = lazy(() =>
+  import(
+    'components/Component/Reviews/Reviews' /* webpackChunkName: "Reviews" */
+  )
+);
+const Trailer = lazy(() =>
+  import(
+    'components/Component/Trailer/Trailer' /* webpackChunkName: "Trailer" */
+  )
+);
 
 // new film page
 export default function MovieDetailsView() {

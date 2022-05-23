@@ -1,12 +1,16 @@
-import { useState, useEffect, Suspense } from 'react';
+import { useState, useEffect, lazy, Suspense } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { getFilmsBySearchQuery } from 'components/Services/API';
 
 import Title from '../../components/Component/Title/Title';
 import SearchForm from 'components/SearchForm/SearchForm';
-import MovieList from '../../components/Component/MoviesList/MoviesList';
-
 import styles from './MoviesPageView.module.css';
+
+const MoviesList = lazy(() =>
+  import(
+    '../../components/Component/MoviesList/MoviesList' /* webpackChunkName: "MoviesList" */
+  )
+);
 
 export default function MoviesView() {
   const [query, setQuery] = useState('');
@@ -49,7 +53,11 @@ export default function MoviesView() {
       <SearchForm query={query} onSubmit={onSubmit} onChange={onChange} />
 
       <Suspense fallback={<h2>Loading movie list...</h2>}>
-        <MovieList movies={movie} />
+        {movie.length === 0 && query.length !== 0 ? (
+          <h2>There's no movies for your search request!</h2>
+        ) : (
+          <MoviesList movies={movie} />
+        )}
       </Suspense>
     </div>
   );

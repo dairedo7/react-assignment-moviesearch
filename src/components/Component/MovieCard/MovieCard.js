@@ -1,5 +1,5 @@
 import styles from './MovieCard.module.css';
-
+import propTypes from 'prop-types';
 import defaultImage from '../../../images/unavailableIMG.png';
 
 export default function MovieCard({ movieDetails }) {
@@ -12,6 +12,7 @@ export default function MovieCard({ movieDetails }) {
     overview,
     genres,
   } = movieDetails;
+
   return (
     <div className={styles.movie_box}>
       <img
@@ -43,3 +44,7 @@ export default function MovieCard({ movieDetails }) {
     </div>
   );
 }
+
+MovieCard.propTypes = {
+  movieDetails: propTypes.object.isRequired,
+};
