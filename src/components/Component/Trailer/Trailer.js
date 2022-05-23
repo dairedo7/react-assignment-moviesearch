@@ -18,7 +18,7 @@ export default function Trailer({ teaser }) {
         {trailer.map(({ key, id, name }) => (
           <li className={styles.trailerItem}>
             <iframe
-              src={`http://www.youtube.com/embed/${key}`}
+              src={`https://www.youtube.com/embed/${key}`}
               key={id}
               width="800px"
               height="500px"
