@@ -11,8 +11,8 @@ export default function GoBackBtn() {
   const onBtnClick = () => {
     // console.log(state.from);
     if (location.pathname) {
-      console.log(navigate);
-      console.log(location.pathname.slice(0, -10));
+      // console.log(navigate);
+      // console.log(location.pathname.slice(0, -10));
       navigate(`/movies?query=${location.pathname}`, {
         pathname: { name: 'query' },
       });

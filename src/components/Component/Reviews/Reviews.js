@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 
 import { getReviewsData } from '../../Services/API';
+import PropTypes from 'prop-types';
 
 export default function Reviews({ movieId }) {
   const [reviews, setReviews] = useState([]);
@@ -29,3 +30,7 @@ export default function Reviews({ movieId }) {
     </div>
   );
 }
+
+Reviews.propTypes = {
+  movieId: PropTypes.string.isRequired,
+};
