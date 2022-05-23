@@ -47,19 +47,16 @@ export async function getTrailerData(movieId) {
     data: { results },
   } = await axios.get(`/movie/${movieId}/videos?api_key=${API_KEY}`);
 
-  console.log(results);
-
   const trailers = [];
   for (const item of results) {
     const { name, type } = item;
     if (name === 'Official Trailer') {
       trailers.push(item);
-    } else {
-      if (type === 'Trailer') {
-        trailers.push(item);
-      }
+    }
+    if (type === 'Trailer') {
+      trailers.push(item);
     }
   }
-  console.log(trailers);
+
   return trailers;
 }
