@@ -20,13 +20,12 @@ export default function Trailer({ teaser }) {
             <iframe
               src={`http://www.youtube.com/embed/${key}`}
               key={id}
-              width="450px"
+              width="800px"
+              height="500px"
               title={name}
-              height="450px"
               allowFullScreen
               className="myClassname"
               display="initial"
-              position="relative"
             ></iframe>
           </li>
         ))}
