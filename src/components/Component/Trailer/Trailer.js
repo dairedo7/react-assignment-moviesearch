@@ -26,6 +26,7 @@ export default function Trailer({ teaser }) {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               className="myClassname"
+              display="initial"
             ></iframe>
           </li>
         ))}
