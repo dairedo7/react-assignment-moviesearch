@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-assignment-moviesearch/static/css/main.73859176.css",
-    "main.js": "/react-assignment-moviesearch/static/js/main.e13f0dbb.js",
+    "main.js": "/react-assignment-moviesearch/static/js/main.ec33b435.js",
     "index.html": "/react-assignment-moviesearch/index.html",
     "main.73859176.css.map": "/react-assignment-moviesearch/static/css/main.73859176.css.map",
-    "main.e13f0dbb.js.map": "/react-assignment-moviesearch/static/js/main.e13f0dbb.js.map"
+    "main.ec33b435.js.map": "/react-assignment-moviesearch/static/js/main.ec33b435.js.map"
   },
   "entrypoints": [
     "static/css/main.73859176.css",
-    "static/js/main.e13f0dbb.js"
+    "static/js/main.ec33b435.js"
   ]
 }
