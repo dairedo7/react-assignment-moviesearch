@@ -8,7 +8,7 @@ const slug = string => slugify(string, { lower: true });
 
 export default function MovieList({ movies }) {
   const location = useLocation();
-  console.log(location);
+
   return (
     <ul>
       {movies.map(({ id, title, name }) => (

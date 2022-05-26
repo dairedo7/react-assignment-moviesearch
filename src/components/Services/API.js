@@ -1,5 +1,5 @@
 import axios from 'axios';
-
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
 axios.defaults.baseURL = 'https://api.themoviedb.org/3';
 
 const API_KEY = '2a8ba5d6d1e87afb6f0a309b33e3467f';
@@ -46,17 +46,14 @@ export async function getTrailerData(movieId) {
   const {
     data: { results },
   } = await axios.get(`/movie/${movieId}/videos?api_key=${API_KEY}`);
+  // console.log(results);
 
-  const trailers = [];
-  for (const item of results) {
-    const { name, type } = item;
-    if (name === 'Official Trailer') {
-      trailers.push(item);
-    }
-    if (type === 'Trailer') {
-      trailers.push(item);
-    }
+  const trailer = results.filter(({ type }) => type === 'Trailer').pop();
+
+  if (trailer) {
+    return trailer;
+  } else {
+    Notify.warning('There is no trailer for current movie!');
+    return 'No trailer was found!';
   }
-
-  return trailers;
 }

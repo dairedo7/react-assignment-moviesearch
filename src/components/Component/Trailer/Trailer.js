@@ -11,25 +11,23 @@ export default function Trailer({ teaser }) {
   useEffect(() => {
     getTrailerData(teaser).then(setTrailer);
   }, [teaser]);
-
+  const { key, id, name } = trailer;
   return (
     <>
       <ul className={styles.trailersContainer}>
-        {trailer.map(({ key, id, name }) => (
-          <li className={styles.trailerItem}>
-            <iframe
-              src={`https://www.youtube.com/embed/${key}`}
-              key={id}
-              width="800px"
-              height="500px"
-              title={name}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="myClassname"
-              display="initial"
-            ></iframe>
-          </li>
-        ))}
+        <li className={styles.trailerItem}>
+          <iframe
+            src={`https://www.youtube.com/embed/${key}`}
+            key={id}
+            width="800px"
+            height="500px"
+            title={name}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="myClassname"
+            display="initial"
+          ></iframe>
+        </li>
       </ul>
     </>
   );
