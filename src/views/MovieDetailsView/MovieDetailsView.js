@@ -41,7 +41,9 @@ export default function MovieDetailsView() {
   const movieId = slug.match(/[a-z0-9]+$/)[0];
 
   const location = useLocation();
-
+  // console.log(location);
+  // const searchQuery = new URLSearchParams(location.search).get('query');
+  // console.log(searchQuery);
   const match = useMatch('/movies/:slug/*');
 
   const urlBase = match.pathnameBase;
@@ -71,6 +73,7 @@ export default function MovieDetailsView() {
               <NavLink
                 to={{
                   pathname: `${urlBase}/cast`,
+                  search: location.search,
                   state: { ...location.state, id: movieId },
                 }}
                 className={styles.link}
@@ -83,6 +86,7 @@ export default function MovieDetailsView() {
               <NavLink
                 to={{
                   pathname: `${urlBase}/reviews`,
+                  search: location.search,
                   state: { ...location.state, id: movieId },
                 }}
                 className={styles.link}
@@ -95,8 +99,10 @@ export default function MovieDetailsView() {
               <NavLink
                 to={{
                   pathname: `${urlBase}/trailer`,
+                  search: location.search,
                   state: { ...location.state, id: movieId },
                 }}
+                state={{}}
                 className={styles.link}
                 activeclassname={styles.link_active}
               >

@@ -8,7 +8,7 @@ const slug = string => slugify(string, { lower: true });
 
 export default function MovieList({ movies }) {
   const location = useLocation();
-
+  console.log(location);
   return (
     <ul>
       {movies.map(({ id, title, name }) => (
@@ -18,8 +18,10 @@ export default function MovieList({ movies }) {
               pathname:
                 `/movies/${slug(`${title} ${id}`)}` ||
                 `/movies/${slug(`${name} ${id}`)}`,
+              search: location.search,
               state: {
-                from: (location.pathname = '/movies' + location.search),
+                from:
+                  location.pathname === '/' ? '/' : '/movies' + location.search,
               },
             }}
           >

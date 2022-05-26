@@ -20,15 +20,11 @@ export default function MoviesView() {
   const location = useLocation();
 
   const searchQuery = new URLSearchParams(location.search).get('query'); //parse value of query param with location.search
-
+  console.log(searchQuery);
   useEffect(() => {
     if (searchQuery) {
       getFilmsBySearchQuery(searchQuery).then(setMovie);
     }
-    navigate({
-      search: `?query=${query}`,
-    });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchQuery]);
 
   const onChange = evt => {
@@ -53,7 +49,7 @@ export default function MoviesView() {
       <SearchForm query={query} onSubmit={onSubmit} onChange={onChange} />
 
       <Suspense fallback={<h2>Loading movie list...</h2>}>
-        {movie.length === 0 && query.length !== 0 ? (
+        {movie.length === 0 && searchQuery ? (
           <h2>There's no movies for your search request!</h2>
         ) : (
           <MoviesList movies={movie} />

@@ -6,16 +6,16 @@ export default function GoBackBtn() {
   const navigate = useNavigate();
   // console.log(navigate);
   const location = useLocation();
-  // console.log(location);
+  console.log(location);
 
   const onBtnClick = () => {
-    // console.log(state.from);
-    if (location.pathname) {
-      // console.log(navigate);
-      // console.log(location.pathname.slice(0, -10));
-      navigate(`/movies?query=${location.pathname}`, {
-        pathname: { name: 'query' },
-      });
+    console.log(location);
+    if (location.search) {
+      console.log(location.pathname);
+      console.log(navigate);
+      navigate(`/movies${location.search}`, {});
+    } else {
+      navigate('/home');
     }
   };
   return (
