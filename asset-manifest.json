@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-assignment-moviesearch/static/css/main.5b7accaa.css",
-    "main.js": "/react-assignment-moviesearch/static/js/main.94b01ada.js",
-    "HomeView.css": "/react-assignment-moviesearch/static/css/HomeView.15a6c5e6.chunk.css",
+    "main.js": "/react-assignment-moviesearch/static/js/main.a12f604d.js",
+    "HomeView.css": "/react-assignment-moviesearch/static/css/HomeView.4cca7916.chunk.css",
     "HomeView.js": "/react-assignment-moviesearch/static/js/HomeView.582da2da.chunk.js",
     "MoviesView.css": "/react-assignment-moviesearch/static/css/MoviesView.bce9ad27.chunk.css",
     "MoviesView.js": "/react-assignment-moviesearch/static/js/MoviesView.f2eca32a.chunk.js",
@@ -20,8 +20,8 @@
     "static/js/201.35b1558b.chunk.js": "/react-assignment-moviesearch/static/js/201.35b1558b.chunk.js",
     "index.html": "/react-assignment-moviesearch/index.html",
     "main.5b7accaa.css.map": "/react-assignment-moviesearch/static/css/main.5b7accaa.css.map",
-    "main.94b01ada.js.map": "/react-assignment-moviesearch/static/js/main.94b01ada.js.map",
-    "HomeView.15a6c5e6.chunk.css.map": "/react-assignment-moviesearch/static/css/HomeView.15a6c5e6.chunk.css.map",
+    "main.a12f604d.js.map": "/react-assignment-moviesearch/static/js/main.a12f604d.js.map",
+    "HomeView.4cca7916.chunk.css.map": "/react-assignment-moviesearch/static/css/HomeView.4cca7916.chunk.css.map",
     "HomeView.582da2da.chunk.js.map": "/react-assignment-moviesearch/static/js/HomeView.582da2da.chunk.js.map",
     "MoviesView.bce9ad27.chunk.css.map": "/react-assignment-moviesearch/static/css/MoviesView.bce9ad27.chunk.css.map",
     "MoviesView.f2eca32a.chunk.js.map": "/react-assignment-moviesearch/static/js/MoviesView.f2eca32a.chunk.js.map",
@@ -40,6 +40,6 @@
   },
   "entrypoints": [
     "static/css/main.5b7accaa.css",
-    "static/js/main.94b01ada.js"
+    "static/js/main.a12f604d.js"
   ]
 }
