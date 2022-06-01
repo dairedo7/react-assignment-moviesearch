@@ -20,7 +20,7 @@ export default function MoviesView() {
   const location = useLocation();
 
   const searchQuery = new URLSearchParams(location.search).get('query'); //parse value of query param with location.search
-  console.log(searchQuery);
+
   useEffect(() => {
     if (searchQuery) {
       getFilmsBySearchQuery(searchQuery).then(setMovie);
