@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router';
 import PropTypes from 'prop-types';
+import styles from './MoviesList.module.scss';
 
 import slugify from 'slugify';
 
@@ -8,12 +9,13 @@ const slug = string => slugify(string, { lower: true });
 
 export default function MovieList({ movies }) {
   const location = useLocation();
-
+  const defaultImg = `https://image.tmdb.org/t/p/w500`;
   return (
-    <ul>
-      {movies.map(({ id, title, name }) => (
-        <li key={id}>
+    <ul className={styles.list}>
+      {movies.map(({ id, title, name, poster_path }) => (
+        <li key={id} className={styles.list__item}>
           <Link
+            className={styles.list__link}
             to={{
               pathname:
                 `/movies/${slug(`${title} ${id}`)}` ||
@@ -25,7 +27,13 @@ export default function MovieList({ movies }) {
               },
             }}
           >
-            {title || name}
+            <img
+              className={styles.itemLogo}
+              src={`${defaultImg}${poster_path}`}
+              alt={title || name}
+            />
+
+            <h2 className={styles.itemHeader}>{title || name}</h2>
           </Link>
         </li>
       ))}

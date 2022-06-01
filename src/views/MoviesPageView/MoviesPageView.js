@@ -50,7 +50,9 @@ export default function MoviesView() {
 
       <Suspense fallback={<h2>Loading movie list...</h2>}>
         {movie.length === 0 && searchQuery ? (
-          <h2>There's no movies for your search request!</h2>
+          <h2 className={styles.results__error}>
+            There's no movies for your search request!
+          </h2>
         ) : (
           <MoviesList movies={movie} />
         )}

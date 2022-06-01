@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
-
+import styles from './Cast.module.scss';
 import { getCastData } from '../../Services/API';
 import PropTypes from 'prop-types';
-import styles from './Cast.module.scss';
 
 import unavailableImage from '../../../images/unavailableIMG.png';
 

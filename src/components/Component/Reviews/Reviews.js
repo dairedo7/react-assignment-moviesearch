@@ -1,3 +1,4 @@
+import styles from './Reviews.module.scss';
 import { useState, useEffect } from 'react';
 
 import { getReviewsData } from '../../Services/API';
@@ -12,9 +13,9 @@ export default function Reviews({ movieId }) {
   }, [movieId]);
 
   return (
-    <div>
+    <div className={styles.reviews}>
       {reviews?.length > 0 ? (
-        <ul>
+        <ul className={styles.reviews__list}>
           {reviews.map(({ id, author, content }) => {
             return (
               <li key={id} className="list_item">
@@ -25,7 +26,7 @@ export default function Reviews({ movieId }) {
           })}
         </ul>
       ) : (
-        <p>No reviews for this movie was found.</p>
+        <p className="reviews__error">No reviews for this movie was found.</p>
       )}
     </div>
   );

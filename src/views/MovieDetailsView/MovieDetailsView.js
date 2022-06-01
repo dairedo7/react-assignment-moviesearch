@@ -5,6 +5,7 @@ import {
   Routes,
   useMatch,
 } from 'react-router-dom';
+import styles from './MovieDetailsView.module.scss';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useState, useEffect, lazy, Suspense } from 'react';
@@ -15,7 +16,6 @@ import GoBackBtn from 'components/Component/GoBackBtn/GoBackBtn';
 import MovieCard from 'components/Component/MovieCard/MovieCard';
 import NotFoundView from 'views/NotFoundView/NotFoundView';
 
-import styles from './MovieDetailsView.module.scss';
 const Cast = lazy(() =>
   import('components/Component/Cast/Cast' /* webpackChunkName: "Cast" */)
 );
@@ -34,16 +34,13 @@ const Trailer = lazy(() =>
 // new film page
 export default function MovieDetailsView() {
   const [movieDetails, setMovieDetails] = useState(null);
-  // console.log(movieDetails);
 
   const { slug } = useParams();
 
   const movieId = slug.match(/[a-z0-9]+$/)[0];
 
   const location = useLocation();
-  // console.log(location);
-  // const searchQuery = new URLSearchParams(location.search).get('query');
-  // console.log(searchQuery);
+
   const match = useMatch('/movies/:slug/*');
 
   const urlBase = match.pathnameBase;
@@ -52,7 +49,6 @@ export default function MovieDetailsView() {
 
   useEffect(() => {
     getFilmById(movieId).then(setMovieDetails);
-    // console.log(movieDetails);
   }, [movieId]);
 
   if (!movieDetails) {
@@ -69,7 +65,7 @@ export default function MovieDetailsView() {
           <h2 className={styles.title}>Additional information</h2>
 
           <ul className={styles.crewList}>
-            <li>
+            <li className={styles.crewListItem}>
               <NavLink
                 to={{
                   pathname: `${urlBase}/cast`,
@@ -82,7 +78,7 @@ export default function MovieDetailsView() {
                 Cast
               </NavLink>
             </li>
-            <li>
+            <li className={styles.crewListItem}>
               <NavLink
                 to={{
                   pathname: `${urlBase}/reviews`,
@@ -95,7 +91,7 @@ export default function MovieDetailsView() {
                 Reviews
               </NavLink>
             </li>
-            <li>
+            <li className={styles.crewListItem}>
               <NavLink
                 to={{
                   pathname: `${urlBase}/trailer`,

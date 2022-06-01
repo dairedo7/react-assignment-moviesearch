@@ -8,7 +8,7 @@ export async function getTrendingFilms() {
   const {
     data: { results },
   } = await axios.get(`/trending/movie/week?api_key=${API_KEY}`);
-
+  console.log(results);
   return results;
 }
 
@@ -22,6 +22,7 @@ export async function getFilmsBySearchQuery(query) {
 
 export async function getFilmById(movieId) {
   const { data } = await axios.get(`/movie/${movieId}?api_key=${API_KEY}`);
+  console.log(data);
 
   return data;
 }

@@ -1,10 +1,21 @@
 @import-normalize; /* bring in normalize.css styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Montserrat', Verdana sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  position: relative;
+  padding-left: 31px;
+  padding-right: 31px;
 }
 
 code {
@@ -14,13 +25,22 @@ code {
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
 }
 
 .link {
   display: inline-block;
   text-decoration: none;
   padding: 15px;
-  font-weight: 500;
+  font-weight: 600;
   color: #000;
   font-size: 22px;
 }

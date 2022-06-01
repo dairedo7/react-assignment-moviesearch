@@ -3,15 +3,25 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 1500px;
+  max-width: 300px;
   padding: 0;
   margin: 0;
   margin: 0 auto;
-  @media screen and (max-width: 768px) {
-    width: 700px;
-  }
 }
 
+.trailer {
+  @media screen and (min-width: 300px) {
+    width: 300px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    height: 350px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 800px;
+    height: 500px;
+  }
+}
 .trailerItem {
   margin: 0;
 }

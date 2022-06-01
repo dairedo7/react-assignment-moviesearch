@@ -33,7 +33,7 @@ export default function MovieCard({ movieDetails }) {
         <p className={styles.overview}>Overview</p>
         <p className={styles.overview__text}>{overview}</p>
         <p className={styles.genres}>Genres</p>
-        <p>
+        <p className={styles.genres__item}>
           {genres.map(({ name, id }) => (
             <span className={styles.genres__name} key={id}>
               {name}

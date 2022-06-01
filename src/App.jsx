@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
+import Normalize from 'react-normalize';
 import Navigation from 'components/Navigation/Navigation';
 
 import './index.css';
@@ -23,7 +24,8 @@ const NotFound = lazy(() =>
 
 export function App() {
   return (
-    <>
+    <div>
+      <Normalize />
       <Navigation />
       <Suspense fallback={<h2>Loading...</h2>}>
         <Routes path="*">
@@ -33,7 +35,7 @@ export function App() {
             exact
             path="movies/:slug/*"
             element={
-              <div>
+              <div className="container">
                 <MovieDetailsView />
               </div>
             }
@@ -57,6 +59,6 @@ export function App() {
           ></Route>
         </Routes>
       </Suspense>
-    </>
+    </div>
   );
 }

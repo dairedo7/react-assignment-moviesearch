@@ -3,13 +3,20 @@ import PropTypes from 'prop-types';
 
 export default function SearchForm({ query, onSubmit, onChange }) {
   return (
-    <form onSubmit={onSubmit}>
-      <input
-        className={styles.input}
-        onChange={onChange}
-        value={query}
-        type="text"
-      />
+    <form className={styles.form} onSubmit={onSubmit}>
+      <label htmlFor="inp" className={styles.input__field}>
+        <input
+          className={styles.input}
+          id="inp"
+          onChange={onChange}
+          value={query}
+          placeholder="&nbsp;"
+          type="text"
+        />
+
+        <span className={styles.label}>Movie Name</span>
+        <span className={styles.focus__bg}></span>
+      </label>
       <button className={styles.button} type="submit">
         Search
       </button>

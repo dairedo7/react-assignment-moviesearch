@@ -1,0 +1,9 @@
+.movie_box {
+  padding: 15px;
+  padding-top: 30px;
+}
+
+.results__error {
+  margin-top: 40px;
+  text-align: center;
+}
