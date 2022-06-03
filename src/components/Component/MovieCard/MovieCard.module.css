@@ -2,7 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-right: 30px;
   padding-bottom: 30px;
 }
 @media screen and (min-width: 1024px) {
@@ -46,8 +45,10 @@
 }
 
 .movie_img {
-  width: 225px;
+  display: block;
+  width: 260px;
   max-width: 500px;
+  margin-bottom: 20px;
   object-fit: contain;
 
   transform: scale(1);
@@ -76,6 +77,10 @@
   text-align: center;
 }
 
+.overview__text {
+  text-align: center;
+}
+
 .genres {
   display: flex;
   justify-content: center;
@@ -89,5 +94,5 @@
   display: inline-block;
 
   margin-left: auto;
-  margin-right: 30px;
+  margin-right: 20px;
 }
