@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-assignment-moviesearch/static/css/main.5b7accaa.css",
-    "main.js": "/react-assignment-moviesearch/static/js/main.a12f604d.js",
-    "HomeView.css": "/react-assignment-moviesearch/static/css/HomeView.4cca7916.chunk.css",
+    "main.js": "/react-assignment-moviesearch/static/js/main.d1dcd50f.js",
+    "HomeView.css": "/react-assignment-moviesearch/static/css/HomeView.6142f8af.chunk.css",
     "HomeView.js": "/react-assignment-moviesearch/static/js/HomeView.582da2da.chunk.js",
-    "MoviesView.css": "/react-assignment-moviesearch/static/css/MoviesView.bce9ad27.chunk.css",
+    "MoviesView.css": "/react-assignment-moviesearch/static/css/MoviesView.8be7b22c.chunk.css",
     "MoviesView.js": "/react-assignment-moviesearch/static/js/MoviesView.f2eca32a.chunk.js",
-    "MovieDetailsView.css": "/react-assignment-moviesearch/static/css/MovieDetailsView.c4e6e549.chunk.css",
+    "MovieDetailsView.css": "/react-assignment-moviesearch/static/css/MovieDetailsView.38211359.chunk.css",
     "MovieDetailsView.js": "/react-assignment-moviesearch/static/js/MovieDetailsView.0b32fe3f.chunk.js",
     "NotFound.js": "/react-assignment-moviesearch/static/js/NotFound.4e135f81.chunk.js",
-    "MoviesList.css": "/react-assignment-moviesearch/static/css/MoviesList.8a73f530.chunk.css",
+    "MoviesList.css": "/react-assignment-moviesearch/static/css/MoviesList.fb0315b6.chunk.css",
     "MoviesList.js": "/react-assignment-moviesearch/static/js/MoviesList.253312e2.chunk.js",
     "Cast.css": "/react-assignment-moviesearch/static/css/Cast.b3e2928e.chunk.css",
     "Cast.js": "/react-assignment-moviesearch/static/js/Cast.58f6e16d.chunk.js",
@@ -20,15 +20,15 @@
     "static/js/201.35b1558b.chunk.js": "/react-assignment-moviesearch/static/js/201.35b1558b.chunk.js",
     "index.html": "/react-assignment-moviesearch/index.html",
     "main.5b7accaa.css.map": "/react-assignment-moviesearch/static/css/main.5b7accaa.css.map",
-    "main.a12f604d.js.map": "/react-assignment-moviesearch/static/js/main.a12f604d.js.map",
-    "HomeView.4cca7916.chunk.css.map": "/react-assignment-moviesearch/static/css/HomeView.4cca7916.chunk.css.map",
+    "main.d1dcd50f.js.map": "/react-assignment-moviesearch/static/js/main.d1dcd50f.js.map",
+    "HomeView.6142f8af.chunk.css.map": "/react-assignment-moviesearch/static/css/HomeView.6142f8af.chunk.css.map",
     "HomeView.582da2da.chunk.js.map": "/react-assignment-moviesearch/static/js/HomeView.582da2da.chunk.js.map",
-    "MoviesView.bce9ad27.chunk.css.map": "/react-assignment-moviesearch/static/css/MoviesView.bce9ad27.chunk.css.map",
+    "MoviesView.8be7b22c.chunk.css.map": "/react-assignment-moviesearch/static/css/MoviesView.8be7b22c.chunk.css.map",
     "MoviesView.f2eca32a.chunk.js.map": "/react-assignment-moviesearch/static/js/MoviesView.f2eca32a.chunk.js.map",
-    "MovieDetailsView.c4e6e549.chunk.css.map": "/react-assignment-moviesearch/static/css/MovieDetailsView.c4e6e549.chunk.css.map",
+    "MovieDetailsView.38211359.chunk.css.map": "/react-assignment-moviesearch/static/css/MovieDetailsView.38211359.chunk.css.map",
     "MovieDetailsView.0b32fe3f.chunk.js.map": "/react-assignment-moviesearch/static/js/MovieDetailsView.0b32fe3f.chunk.js.map",
     "NotFound.4e135f81.chunk.js.map": "/react-assignment-moviesearch/static/js/NotFound.4e135f81.chunk.js.map",
-    "MoviesList.8a73f530.chunk.css.map": "/react-assignment-moviesearch/static/css/MoviesList.8a73f530.chunk.css.map",
+    "MoviesList.fb0315b6.chunk.css.map": "/react-assignment-moviesearch/static/css/MoviesList.fb0315b6.chunk.css.map",
     "MoviesList.253312e2.chunk.js.map": "/react-assignment-moviesearch/static/js/MoviesList.253312e2.chunk.js.map",
     "Cast.b3e2928e.chunk.css.map": "/react-assignment-moviesearch/static/css/Cast.b3e2928e.chunk.css.map",
     "Cast.58f6e16d.chunk.js.map": "/react-assignment-moviesearch/static/js/Cast.58f6e16d.chunk.js.map",
@@ -40,6 +40,6 @@
   },
   "entrypoints": [
     "static/css/main.5b7accaa.css",
-    "static/js/main.a12f604d.js"
+    "static/js/main.d1dcd50f.js"
   ]
 }
