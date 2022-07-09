@@ -25,7 +25,7 @@ export async function getFilmById(movieId) {
 
   return data;
 }
-// let movieId = 14911;
+
 export async function getCastData(movieId) {
   const {
     data: { cast },

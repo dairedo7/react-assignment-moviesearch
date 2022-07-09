@@ -112,20 +112,14 @@ export default function MovieDetailsView() {
         {/* <Suspense fallback={<Loader />}> */}
         <Suspense fallback={<h2>Loading in movie card...</h2>}>
           <Routes>
-            <Route
-              exact
-              path={`/cast`}
-              element={<Cast movieId={movieId} />}
-            ></Route>
+            <Route path={`/cast`} element={<Cast movieId={movieId} />}></Route>
 
             <Route
-              exact
               path={`/reviews`}
               element={<Reviews movieId={movieId} />}
             ></Route>
 
             <Route
-              exact
               path={`trailer`}
               element={<Trailer teaser={movieId} />}
             ></Route>
