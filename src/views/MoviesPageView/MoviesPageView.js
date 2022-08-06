@@ -40,7 +40,7 @@ export default function MoviesView() {
       pathname: navigate.location,
       search: `?query=${query}`,
     });
-    // navigate(`?query=${query}`, { search: `?query=${query}` });
+    // navigate(`?query=${query}`, { search: `?query=${query}` })
   };
 
   return (
