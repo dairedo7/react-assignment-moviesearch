@@ -1,0 +1,61 @@
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.item:hover, .item:focus {
+  z-index: 12;
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+  -webkit-box-shadow: 8px 8px 24px 0px #42445a;
+  box-shadow: 8px 8px 24px 0px #42445a;
+  color: blue;
+}
+
+.image {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.name {
+  display: block;
+  text-align: center;
+  width: 250px;
+  font-weight: 400;
+  font-size: 15px;
+  z-index: 1;
+}
+
+.name:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.crewList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=Cast.module.css.map */

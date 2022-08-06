@@ -1,0 +1,104 @@
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  padding-left: 20px;
+  margin-left: -20px;
+}
+
+@media screen and (min-width: 500px) {
+  .list {
+    margin-right: 20px;
+  }
+  .list__item:not(:nth-child(2n)) {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 810px) {
+  .list__item:not(:nth-child(2n)) {
+    margin-right: 0;
+  }
+  .list__item:not(:nth-child(3n)) {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .list__item {
+    margin-right: 20px;
+  }
+  .list__item:not(:nth-child(4n)) {
+    margin-right: 20px;
+  }
+}
+
+.list__item {
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.list__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 597px) {
+  .list__item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 887px) {
+  .list__item:not(:nth-last-child(-n + 4)) {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1467px) {
+  .list__item:not(:nth-last-child(-n + 5)) {
+    margin-bottom: 20px;
+  }
+}
+
+.list__item:hover, .list__item:focus {
+  z-index: 2;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.list__link {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+}
+
+.list__link:hover, .list__link:focus {
+  color: aqua;
+}
+
+.itemHeader {
+  width: 250px;
+  height: 30px;
+  font-size: 12px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+.itemLogo {
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 250px;
+}
+/*# sourceMappingURL=MoviesList.module.css.map */

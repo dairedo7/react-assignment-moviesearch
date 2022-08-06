@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import Normalize from 'react-normalize';
 import Navigation from 'components/Navigation/Navigation';
@@ -29,7 +29,10 @@ export function App() {
       <Navigation />
       <Suspense fallback={<h2>Loading...</h2>}>
         <Routes path="*">
-          <Route index element={<HomeView />}></Route>
+          <Route
+            index
+            element={<HomeView /> && <Navigate to="/home" />}
+          ></Route>
           <Route path="/home" element={<HomeView />}></Route>
           <Route
             exact
